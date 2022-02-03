@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Float Inspector</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔎</text></svg>">
+    </head>
+    <body>
+        <div class="container">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 939 52">
+                <title>Float Inspector</title>
+                <path fill="#000" d="M7.723 30.416V51H.463V1.746h45.72v6.627H7.724V23.79h37.02v6.627H7.722zM62.493 1.746h7.26v42.627h37.81V51h-45.07V1.746zM149.22 51.72c-10.231 0-17.385-.673-21.463-2.02-4.078-1.29-6.668-3.786-7.77-7.49-.773-2.542-1.16-7.798-1.16-15.767 0-8.109.363-13.365 1.09-15.767 1.101-3.739 3.715-6.281 7.84-7.63 4.125-1.347 11.279-2.02 21.463-2.02 10.218 0 17.367.65 21.445 1.95 4.031 1.348 6.627 3.891 7.787 7.63.762 2.542 1.143 7.822 1.143 15.837 0 8.063-.358 13.295-1.073 15.698-1.101 3.75-3.697 6.27-7.787 7.558-4.078 1.348-11.25 2.022-21.515 2.022zm0-6.626c11.32 0 17.988-.838 20.003-2.514 2.028-1.687 3.041-7.066 3.041-16.137 0-9.117-.984-14.513-2.953-16.19-2.015-1.687-8.713-2.53-20.091-2.53-11.379 0-18.053.843-20.022 2.53-2.016 1.677-3.023 7.073-3.023 16.19 0 9.024 1.007 14.38 3.023 16.067 2.016 1.722 8.689 2.584 20.022 2.584zM227.298 1.746L253.296 51h-8.279l-5.836-10.951h-35.139L198.294 51h-8.279l25.91-49.254h11.373zm8.719 31.764L222.622 7.652h-1.863L207.364 33.51h28.653zM264.543 1.746h51.486v6.627h-22.043V51h-7.348V8.373h-22.095V1.746zM376.737 51h-7.348V1.746h7.348V51zM393.503 1.676h10.722l42.258 43.207V1.676h7.348V51h-11.092L400.833 8.162V51h-7.33V1.676zM499.39 23.42c11.472 0 18.697.674 21.674 2.021 3.703 1.676 5.554 5.707 5.554 12.094 0 6.047-2.232 10.008-6.697 11.883-3.656 1.535-11.051 2.303-22.184 2.303-12.046 0-19.798-1.319-23.255-3.955-2.637-2.016-3.955-6.41-3.955-13.184h7.347c0 4.652 1.031 7.559 3.094 8.719 2.062 1.195 7.676 1.793 16.84 1.793 8.976 0 14.812-.434 17.508-1.301 2.636-.855 3.955-2.941 3.955-6.258 0-3.363-.985-5.45-2.953-6.258-2.016-.82-7.659-1.23-16.928-1.23-11.32 0-18.926-1.365-22.817-4.096-2.976-2.074-4.464-5.795-4.464-11.162 0-5.812 1.798-9.58 5.396-11.303C481.056 1.8 488.351.956 499.39.956c10.992 0 18.217 1.323 21.674 3.972 2.742 2.11 4.113 6.234 4.113 12.375h-7.207c0-4.219-1.084-6.88-3.252-7.98-2.156-1.114-7.266-1.67-15.328-1.67-6.903 0-11.151.099-12.744.298-4.793.574-7.19 2.854-7.19 6.838 0 3.352 1.295 5.63 3.885 6.838 2.59 1.195 7.939 1.793 16.049 1.793zM540.097 51V1.746h40.096c4.465 0 7.922 1.272 10.371 3.815 2.402 2.601 3.604 6.562 3.604 11.882 0 5.285-1.248 9.2-3.745 11.742-2.543 2.59-6.046 3.885-10.511 3.885h-32.555V51h-7.26zm7.26-24.557h32.555c2.156 0 3.855-.744 5.097-2.232 1.207-1.441 1.811-3.697 1.811-6.768 0-3.117-.604-5.42-1.811-6.908-1.242-1.441-2.964-2.162-5.168-2.162h-32.484v18.07zM606.768 1.746h47.162v6.627h-39.815V22.7h38.444v6.627h-38.444v15.047h39.815V51h-47.162V1.746zM678.834 26.443c0 8.977.961 14.332 2.883 16.067 1.922 1.722 7.799 2.584 17.631 2.584 9.176 0 14.772-.504 16.787-1.512 2.344-1.195 3.516-4.435 3.516-9.72h7.347c0 7.828-1.605 12.75-4.816 14.765-3.27 2.063-10.881 3.094-22.834 3.094-12.141 0-19.822-1.442-23.045-4.324-3.211-2.883-4.816-9.868-4.816-20.954 0-11.133 1.605-18.164 4.816-21.093 3.176-2.883 10.858-4.325 23.045-4.325 12 0 19.605 1.008 22.816 3.024 3.223 2.015 4.834 6.96 4.834 14.836h-7.347c0-5.274-1.078-8.467-3.235-9.58-2.156-1.055-7.845-1.582-17.068-1.582-9.891 0-15.768.843-17.631 2.53-1.922 1.724-2.883 7.12-2.883 16.19zM742.991 1.746h51.486v6.627h-22.043V51h-7.347V8.373h-22.096V1.746zM837.101 51.72c-10.231 0-17.385-.673-21.463-2.02-4.078-1.29-6.668-3.786-7.77-7.49-.773-2.542-1.16-7.798-1.16-15.767 0-8.109.363-13.365 1.09-15.767 1.102-3.739 3.715-6.281 7.84-7.63 4.125-1.347 11.279-2.02 21.463-2.02 10.219 0 17.367.65 21.445 1.95 4.031 1.348 6.627 3.891 7.787 7.63.762 2.542 1.143 7.822 1.143 15.837 0 8.063-.358 13.295-1.072 15.698-1.102 3.75-3.698 6.27-7.788 7.558-4.078 1.348-11.25 2.022-21.515 2.022zm0-6.626c11.32 0 17.988-.838 20.004-2.514 2.027-1.687 3.041-7.066 3.041-16.137 0-9.117-.985-14.513-2.953-16.19-2.016-1.687-8.713-2.53-20.092-2.53s-18.053.843-20.022 2.53c-2.015 1.677-3.023 7.073-3.023 16.19 0 9.024 1.008 14.38 3.023 16.067 2.016 1.722 8.69 2.584 20.022 2.584zM925.55 1.746c4.172 0 7.389 1.418 9.651 4.254 2.25 2.883 3.375 6.697 3.375 11.443 0 4.078-.645 7.125-1.934 9.141-.914 1.441-2.379 2.596-4.394 3.463 1.781.726 3.175 1.664 4.183 2.812 1.43 1.63 2.145 3.645 2.145 6.047V51h-7.26V38.906c0-1.629-.768-3-2.303-4.113-1.582-1.055-3.48-1.582-5.695-1.582h-34.629V51h-7.348V1.746h44.209zm-36.861 24.768h33.908c2.696 0 4.688-.48 5.977-1.442 1.828-1.336 2.742-3.879 2.742-7.629 0-3.738-.937-6.304-2.812-7.699-1.243-.914-3.211-1.371-5.907-1.371h-33.908v18.14z"/>
+            </svg>
+            <div class="subtitle">Based on <a href="https://github.com/giuscris/floatinfo/">floatinfo.js</a></div>          
+            <section>
+                <div class="caption">Decimal number</div>
+                <div class="subcaption">Type to change</div>
+                <input class="number-input" id="numberInput">
+            </section>
+            <section>
+                <div class="caption">Exponential Notation</div>
+                <div class="exponential">-1<sup class="sign" id="expSign"></sup>&nbsp;&times;&nbsp;<span id="expBase">2</span><sup class="exponent" id="expExponent"></sup>&nbsp;&times;&nbsp;<span class="significand" id="expSignificand"></span> =&nbsp;<span id="expNum"></span></div>
+            </section>
+            <section>
+                <div class="caption">Machine bits (32-bit words)</div>
+                <div class="subcaption">Click to flip bits</div>
+                <div class="words words-bin">
+                    <div class="word">
+                            <span class="bit sign"><input type="checkbox" id="bit63"><label for="bit63"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit62"><label for="bit62"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit61"><label for="bit61"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit60"><label for="bit60"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit59"><label for="bit59"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit58"><label for="bit58"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit57"><label for="bit57"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit56"><label for="bit56"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit55"><label for="bit55"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit54"><label for="bit54"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit53"><label for="bit53"></label></span>
+                            <span class="bit exponent"><input type="checkbox" id="bit52"><label for="bit52"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit51"><label for="bit51"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit50"><label for="bit50"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit49"><label for="bit49"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit48"><label for="bit48"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit47"><label for="bit47"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit46"><label for="bit46"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit45"><label for="bit45"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit44"><label for="bit44"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit43"><label for="bit43"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit42"><label for="bit42"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit41"><label for="bit41"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit40"><label for="bit40"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit39"><label for="bit39"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit38"><label for="bit38"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit37"><label for="bit37"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit36"><label for="bit36"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit35"><label for="bit35"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit34"><label for="bit34"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit33"><label for="bit33"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit32"><label for="bit32"></label></span>
+                    </div>
+                    <div class="word word-lo">
+                            <span class="bit significand"><input type="checkbox" id="bit31"><label for="bit31"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit30"><label for="bit30"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit29"><label for="bit29"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit28"><label for="bit28"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit27"><label for="bit27"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit26"><label for="bit26"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit25"><label for="bit25"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit24"><label for="bit24"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit23"><label for="bit23"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit22"><label for="bit22"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit21"><label for="bit21"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit20"><label for="bit20"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit19"><label for="bit19"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit18"><label for="bit18"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit17"><label for="bit17"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit16"><label for="bit16"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit15"><label for="bit15"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit14"><label for="bit14"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit13"><label for="bit13"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit12"><label for="bit12"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit11"><label for="bit11"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit10"><label for="bit10"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit9"><label for="bit9"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit8"><label for="bit8"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit7"><label for="bit7"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit6"><label for="bit6"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit5"><label for="bit5"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit4"><label for="bit4"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit3"><label for="bit3"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit2"><label for="bit2"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit1"><label for="bit1"></label></span>
+                            <span class="bit significand"><input type="checkbox" id="bit0"><label for="bit0"></label></span>
+                    </div>
+                </div>
+                <div class="words words-hex">
+                    <div class="word" id="hexHiWord"></div>
+                    <div class="word word-lo" id="hexLoWord"></div>
+                </div>
+                <div class="legend">
+                    <span class="l l-sign">Sign</span> <span class="l l-exponent">Exponent</span> <span class="l l-significand">Significand</span>
+                </div>
+            </section>
+            <section>
+                <div class="caption">Previous/next float</div>
+                <div class="button-group">
+                    <button class="button-red" id="prevFloat">&larr; Prev</button>
+                    <button class="button-red" id="nextFloat">Next &rarr;</button>
+                </div>
+            </section>
+            <section>
+                <div class="caption">Presets</div>
+                <div class="button-group" id="presetButtons"></div>
+            </section>
+            <section>
+                <div class="caption">Options</div>
+                <label class="option-control"><input type="checkbox" id="expandExp"> Expand exponential notation</label>
+                <label class="option-control"><input type="checkbox" id="binExp"> Display exponential notation as binary</label>
+                <label class="option-control"><input type="checkbox" id="displayCheckboxes"> Display checkboxes</label>
+                <label class="option-control"><input type="checkbox" id="displayMachineOrder"> Display words in current machine order (<span class="text-bold" id="endianness">big</span> endian)</label>
+            </section>
+        </div>
+
+        <script type="module" src="assets/js/script.js"></script>
+    </body>
+</html>

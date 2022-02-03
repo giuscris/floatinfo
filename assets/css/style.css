@@ -1,0 +1,226 @@
+:root {
+    --sign-color: #ff69b4;
+    --exponent-color: #2aa397;
+    --significand-color: #daa520;
+
+    --body-background-color: #fffdfa;
+    --muted-color: #8a8a8a;
+
+    --a-color: #288f9d;
+
+    --button-color: #f6ebd4;
+    --button-background-color: #13110d;
+    --button-border-color: #464139;
+
+    --button-red-background-color: #d30c04;
+    --button-red-border-color: #9c0500;
+
+    --number-input-color: #b0fffb;
+    --number-input-background-color: #044352;
+    --number-input-border-color: #114e5e;
+    --number-input-text-shadow-color: #0aabd4;
+    --number-input-box-shadow-color: #288f9d;
+    
+    font-size: 18px;
+}
+
+body {
+    font-family: 'SFMono-Regular', 'SF Mono', 'Cascadia Mono', 'Liberation Mono', Menlo, Consolas, monospace;
+    margin: 0;
+    background-color: var(--body-background-color);
+    text-shadow: 1px 0.5px 0 rgba(0, 0, 0, 0.25);
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--a-color);
+}
+
+input, button {
+    font: inherit;
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+button {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border: 3px outset var(--button-border-color);
+}
+
+button:active {
+    border-style: inset;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    display: block;
+    width: 22rem;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.caption, .subcaption {
+    color: var(--muted-color);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.caption {
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+}
+
+.subcaption {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+}
+
+.number-input {
+    display: block;
+    width: 100%;
+    text-align: right;
+    background-color: var(--number-input-background-color);
+    color: var(--number-input-color);
+    text-shadow: 1px 1px 4px var(--number-input-text-shadow-color);
+    box-shadow: inset 0px 0px 12px 2px var(--number-input-box-shadow-color);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border: 8px inset var(--number-input-border-color);
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.75rem;
+}
+
+.exponential {
+    overflow-x: auto;
+}
+
+.sign {
+    color: var(--sign-color);
+}
+
+.exponent {
+    color: var(--exponent-color);
+}
+
+.significand {
+    color: var(--significand-color);
+}
+
+.words {
+    display: flex;
+    margin: 0 -0.5rem -0.5rem;
+    flex-wrap: wrap;
+}
+
+.words-bin .word {
+    display: flex;
+    flex-grow: 1;
+    border: 4px double var(--muted-color);
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.5rem 0.5rem;
+}
+
+.words-hex .word {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.bit {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.bit input {
+    display: none;
+}
+
+.bit input + label::after {
+    content: "0";
+    letter-spacing: 0.25px;
+}
+
+.bit input:checked + label::after {
+    content: "1";
+}
+
+.display-checkboxes .bit input {
+    display: inline-block;
+}
+
+.words-hex {
+    display: flex;
+}
+
+.legend {
+    margin: 0.75rem 0;
+}
+
+.l {
+    font-size: 0.75rem;
+    color: var(--muted-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.l::before {
+    content: ' ';
+    width: 1rem;
+    height: 0.5rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.l-sign::before {
+    background-color: var(--sign-color);
+}
+
+.l-exponent::before {
+    background-color: var(--exponent-color);
+}
+
+.l-significand::before {
+    background-color: var(--significand-color);
+}
+
+.button-group {
+    margin-bottom: -0.5rem;
+}
+
+.button-red {
+    background-color: var(--button-red-background-color);
+    border-color: var(--button-red-border-color);
+}
+
+.option-control {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.little-endian .word-lo {
+    order: -1;
+}
