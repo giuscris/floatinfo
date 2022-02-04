@@ -21,7 +21,7 @@ const sign = floatinfo.sign(float); // 1
 const exponent = floatinfo.exponent(float); // 1023
 
 // Get the integer part of the significand
-const integer = floatinfo.exponent(float); // 1
+const integer = floatinfo.integer(float); // 1
 
 // Get the fractional part of the significand, unpacked as words
 const fraction = floatinfo.fraction(float); // {lo: 0, hi: 0}
